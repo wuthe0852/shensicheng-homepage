@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>项目展示网页</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f3f4f6; color: #111827; }
+    header { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 48px 20px; }
+    main { max-width: 1080px; margin: 0 auto; padding: 28px 20px 48px; }
+    .card { background: white; border-radius: 18px; padding: 24px; margin-bottom: 22px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .img-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+    img { width: 100%; border-radius: 12px; background: #fff; }
+    h1, h2 { margin-top: 0; }
+    ul { padding-left: 20px; }
+    .metric { display: inline-block; background: #eff6ff; color: #1d4ed8; padding: 10px 14px; border-radius: 999px; margin: 6px 8px 0 0; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>乳腺癌诊断数据分析与预测模型构建</h1>
+    <p>基于 Wisconsin Breast Cancer Dataset 的医学数据分析课程项目</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>项目背景</h2>
+      <p>乳腺病灶良恶性判断是临床常见问题。为了展示标准的数据分析流程，本项目采用公开医学数据集，完成数据读取、预处理、描述性统计、模型构建、模型评估以及结果可视化。</p>
+    </section>
+
+    <section class="card">
+      <h2>分析流程</h2>
+      <ul>
+        <li>读取公开医学数据集</li>
+        <li>完成数据清洗、标准化和训练测试集划分</li>
+        <li>进行描述性统计和相关性分析</li>
+        <li>构建逻辑回归与随机森林模型</li>
+        <li>使用 ROC、混淆矩阵和特征重要性进行评价</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>模型结果</h2>
+      <div class="metric">Logistic Regression Accuracy: 0.9825</div>
+      <div class="metric">Logistic Regression AUC: 0.9954</div>
+      <div class="metric">Random Forest Accuracy: 0.9474</div>
+      <div class="metric">Random Forest AUC: 0.9937</div>
+    </section>
+
+    <section class="card">
+      <h2>结果可视化</h2>
+      <div class="img-grid">
+        <div><img src="figures/class_distribution.png" alt="类别分布图"><p>类别分布图</p></div>
+        <div><img src="figures/roc_curves.png" alt="ROC 曲线"><p>ROC 曲线</p></div>
+        <div><img src="figures/confusion_matrix.png" alt="混淆矩阵"><p>混淆矩阵</p></div>
+        <div><img src="figures/feature_importance.png" alt="特征重要性"><p>特征重要性</p></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
