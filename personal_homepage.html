@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人主页</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f7fb; color: #1f2937; }
+    .container { max-width: 960px; margin: 0 auto; padding: 32px 20px; }
+    .hero { background: white; padding: 36px; border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    h1, h2 { margin-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin-top: 24px; }
+    .card { background: white; padding: 22px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+    a { color: #2563eb; text-decoration: none; }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>个人主页</h1>
+      <p><strong>姓名：</strong>沈思成</p>
+      <p><strong>专业：</strong>临床医学八年制</p>
+      <p><strong>课程：</strong>医学数据分析 / Python 数据分析实践</p>
+      <p>本主页用于展示个人基本信息、课程项目以及相关技能，满足课程报告第一部分“个人主页网址”的要求。</p>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <h2>个人简介</h2>
+        <p>我叫沈思成，现为临床医学八年制学生。我对医学数据分析、临床研究和机器学习建模感兴趣，希望通过课程训练系统掌握数据读取、数据预处理、统计分析、预测建模、结果可视化与科研展示的完整流程。</p>
+      </div>
+      <div class="card">
+        <h2>技能</h2>
+        <ul>
+          <li>Python 数据分析</li>
+          <li>机器学习建模</li>
+          <li>LaTeX 学术排版</li>
+          <li>网页前端基础开发</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>课程项目</h2>
+        <p><a href="project_showcase.html">医学数据分析课程项目：乳腺癌诊断预测</a></p>
+        <p>包含公开医学数据分析、机器学习模型比较、图表展示与网页汇报。</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
